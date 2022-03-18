@@ -1,0 +1,27 @@
+$text-color : #254152;
+$bg-color   : #E5E5E5;
+$light-blue : #E7F2F9;
+$accent-blue: #2DA6DD;
+
+* {
+  margin         : 0;
+  padding        : 0;
+  box-sizing     : border-box;
+  color          : inherit;
+  font-size      : inherit;
+  text-decoration: none;
+}
+
+body {
+  font-size     : 18px;
+  font-weight   : 400;
+  letter-spacing: 0.02em;
+  line-height   : 140%;
+  color         : $text-color;
+}
+
+.container {
+  max-width: 1170px;
+  padding  : 0 15px;
+  margin   : 0 auto;
+}
