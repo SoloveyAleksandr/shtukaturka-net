@@ -10,10 +10,6 @@ $accent-blue: #2DA6DD;
   line-height: 120%;
 }
 
-a {
-  text-decoration: none;
-}
-
 html {
   font-family     : 'Montserrat', sans-serif;
   font-size       : 18px;
@@ -55,4 +51,15 @@ html {
     padding         : 100px 0 100px 0;
     background-color: $light-blue;
   }
+}
+
+.more-link {
+  display        : inline-block;
+  text-decoration: underline;
+  font-weight    : 700;
+  color          : $accent-blue;
+}
+
+.content_white {
+  color: $white;
 }
