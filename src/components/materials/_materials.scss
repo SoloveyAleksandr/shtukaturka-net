@@ -1,0 +1,15 @@
+.materials {
+  &-swiper {
+    padding-bottom: 80px;
+  }
+
+  &-slider {
+    &-navigation {
+      position       : relative;
+      bottom         : 0px;
+      display        : flex;
+      align-items    : center;
+      justify-content: center;
+    }
+  }
+}
