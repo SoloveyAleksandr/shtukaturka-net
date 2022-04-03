@@ -1,0 +1,17 @@
+.technologies {
+  &-list {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: space-between;
+    flex-wrap      : wrap;
+
+    &__item {
+      width        : 25%;
+      margin-bottom: 80px;
+    }
+  }
+
+  &-link {
+    text-align: right;
+  }
+}

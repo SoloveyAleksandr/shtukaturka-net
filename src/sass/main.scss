@@ -1,6 +1,11 @@
 @import 'reset';
 @import 'normalize';
 @import 'general';
+
+@import '../components/materialCard/materialCard';
+@import '../components/technologiesItem/technologiesItem';
+@import '../components/processItem/processItem';
+
 @import '../components/header/header';
 @import '../components/mainSlider/mainSlider';
 @import '../components/about/about';
@@ -10,4 +15,5 @@
 @import '../components/portfolio/portfolio';
 @import '../components/consultation/consultation';
 @import '../components/materials/materials';
-@import '../components/materialCard/materialCard';
+@import '../components/technologies/technologies';
+@import '../components/process/process';
