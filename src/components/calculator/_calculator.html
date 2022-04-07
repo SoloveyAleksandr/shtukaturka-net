@@ -1,16 +1,50 @@
-<section class="calculator section_blue">
-  <div class="container">
-    <div class="section-title-wrapper">
-      <h3 class="section-title">
-        калькулятор стоимости
-      </h3>
-      <p class="about-description section-description">
-        Наглядно показываем материалами Процесс оштукатуривания машинным способом
-      </p>
+<div class="calculator-wrapper">
+  <div class="calculator">
+    <div class="calculator-row">
+      <span class="calculator__input-name">Площадь стен</span>
+      <div class="calculator-input-wrapper">
+        <div class="calculator-input">
+          <input class="calculator__input" type="range" min="200" max="3000" name="wallAria" id="wallAria">
+          <span class="calculator-input__value calculator-input__min">200м<sup>2</sup></span>
+          <span class="calculator-input__value calculator-input__max">3000м<sup>2</sup></span>
+        </div>
+        <div class="calculator__value-wraper">
+          <span class="calculator__value" id="wallAriaValue">1400</span><span
+            class="calculator__unit">м<sup>2</sup></span>
+        </div>
+      </div>
     </div>
 
-    <div class="calculator-body">
-
+    <div class="calculator-row">
+      <span class="calculator__input-name">Площадь стен</span>
+      <div class="calculator-input-wrapper">
+        <div class="calculator-input">
+          <input class="calculator__input" type="range" min="200" max="3000" name="wallAria" id="wallAria">
+          <span class="calculator-input__value calculator-input__min">10мм</span>
+          <span class="calculator-input__value calculator-input__max">30мм</span>
+        </div>
+        <div class="calculator__value-wraper">
+          <span class="calculator__value" id="wallAriaValue">24</span><span class="calculator__unit">мм</span>
+        </div>
+      </div>
     </div>
   </div>
-</section>
+
+  <div class="calculator-form">
+    <h6 class="calculator-form__title">Предварительная стоимость</h6>
+    <div class="calculator-form-body">
+      <div class="calculator-form-info">
+        <span class="calculator-form-info__title">За квадратный метр</span>
+        <span class="calculator-form-info__value">650 руб.</span>
+      </div>
+      <div class="calculator-form-info">
+        <span class="calculator-form-info__title">Общая стоимость работ</span>
+        <span class="calculator-form-info__value">130 000 руб.</span>
+      </div>
+      <button class="calculator-form__btn">Оставить заявку</button>
+    </div>
+    <p class="calculator-form__description">
+      После отправки формы с Вами свяжется наш менеджер и озвучит итоговую стоимость.
+    </p>
+  </div>
+</div>

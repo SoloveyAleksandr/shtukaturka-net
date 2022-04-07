@@ -1,0 +1,115 @@
+.calculator {
+  background-color: #fff;
+  padding         : 60px 40px;
+  border-radius   : 20px;
+
+  &-wrapper {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : flex-start;
+  }
+
+  &__input-name {
+    font-weight  : 700;
+    display      : block;
+    margin-bottom: 5px;
+  }
+
+  &-input-wrapper {
+    display           : flex;
+    align-items       : center;
+    // justify-content: space-between;
+  }
+
+  &__value-wraper {
+    width          : 140px;
+    height         : 60px;
+    border-radius  : 60px;
+    border         : 2px solid $text-color;
+    padding        : 0 10px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    font-size      : 16px;
+    font-weight    : 700;
+  }
+
+  &-input {
+    position    : relative;
+    margin-right: 60px;
+
+    &__value {
+      position : absolute;
+      bottom   : -17px;
+      font-size: 14px;
+    }
+
+    &__min {
+      left: 0;
+    }
+
+    &__max {
+      right: 0;
+    }
+  }
+
+  &__input {
+    width: 460px;
+  }
+
+  &-form {
+    max-width       : 360px;
+    padding         : 60px 40px;
+    background-color: $text-color;
+    color           : #fff;
+    border-radius   : 20px;
+    text-align      : center;
+
+    &__description {
+      font-size : 16px;
+      opacity   : 0.65;
+      text-align: left;
+    }
+
+    &__title {
+      font-size    : 24px;
+      font-weight  : 700;
+      margin-bottom: 40px;
+      text-align   : left;
+    }
+
+    &-info {
+
+      &__title {
+        display      : block;
+        font-size    : 16px;
+        opacity      : 0.65;
+        margin-bottom: 10px;
+      }
+
+      &__value {
+        font-size    : 24px;
+        font-weight  : 700;
+        display      : inline-block;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__btn {
+      background-color: $accent-blue;
+      border-radius   : 50px;
+      padding         : 20px 50px;
+      font-size       : 16px;
+      color           : #fff;
+      border          : 3px solid $accent-blue;
+      transition      : .3s;
+      margin-bottom   : 60px;
+
+      &:hover {
+        color           : $accent-blue;
+        background-color: transparent;
+        cursor          : pointer;
+      }
+    }
+  }
+}
