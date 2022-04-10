@@ -16,16 +16,24 @@
     </div>
 
     <div class="calculator-row">
-      <span class="calculator__input-name">Площадь стен</span>
+      <span class="calculator__input-name">Толщина слоя</span>
       <div class="calculator-input-wrapper">
         <div class="calculator-input">
-          <input class="calculator__input" type="range" min="200" max="3000" name="wallAria" id="wallAria">
+          <input class="calculator__input" type="range" min="10" max="30" name="wallAria" id="sliceThickness">
           <span class="calculator-input__value calculator-input__min">10мм</span>
           <span class="calculator-input__value calculator-input__max">30мм</span>
         </div>
         <div class="calculator__value-wraper">
-          <span class="calculator__value" id="wallAriaValue">24</span><span class="calculator__unit">мм</span>
+          <span class="calculator__value" id="sliceThicknessValue">24</span><span class="calculator__unit">мм</span>
         </div>
+      </div>
+    </div>
+
+    <div class="calculator-row">
+      <div class="calculator__checkbox-wrapper">
+        <input class="calculator__checkbox" id="calculatorCheckbox" type="checkbox">
+        <label class="calculator__checkbox-check" for="calculatorCheckbox"></label>
+        <label class="calculator__checkbox-name" for="calculatorCheckbox">Включить стоимость материалов</label>
       </div>
     </div>
   </div>

@@ -9,6 +9,10 @@
     align-items    : flex-start;
   }
 
+  &-row {
+    margin-bottom: 50px;
+  }
+
   &__input-name {
     font-weight  : 700;
     display      : block;
@@ -16,9 +20,8 @@
   }
 
   &-input-wrapper {
-    display           : flex;
-    align-items       : center;
-    // justify-content: space-between;
+    display    : flex;
+    align-items: center;
   }
 
   &__value-wraper {
@@ -109,6 +112,60 @@
         color           : $accent-blue;
         background-color: transparent;
         cursor          : pointer;
+      }
+    }
+  }
+
+  &__checkbox {
+    display: none;
+
+    &-wrapper {
+      display    : flex;
+      align-items: center;
+    }
+
+    &-check {
+      width           : 36px;
+      height          : 36px;
+      border-radius   : 50%;
+      background-color: #fff;
+      border          : 3px solid $text-color;
+      position        : relative;
+      display         : flex;
+      align-items     : center;
+      justify-content : center;
+      transition      : .3s;
+      cursor          : pointer;
+      margin-right    : 24px;
+
+      &::before,
+      &::after {
+        content         : '';
+        display         : block;
+        position        : absolute;
+        background-color: $text-color;
+        height          : 2px;
+        transition      : .3s;
+      }
+
+      &::before {
+        width    : 12px;
+        transform: rotate(-45deg) translate(2px, 3px);
+      }
+
+      &::after {
+        width    : 8px;
+        transform: rotate(45deg) translate(-1px, 3px);
+      }
+    }
+
+    &:checked+.calculator__checkbox-check {
+      background-color: $accent-blue;
+      border-color    : $accent-blue;
+
+      &::before,
+      &::after {
+        background-color: #fff;
       }
     }
   }
